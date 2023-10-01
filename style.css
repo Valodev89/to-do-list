@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    min-width: 100vw;
+    overflow: hidden;
+    background-image: url(./fb46965716328f87a6eb270e7d317ef1-1671706043.jpg);
+    background-size:auto ;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    background-color: rgba(48, 136, 0, 0.925);
+    min-height: 300px;
+    padding: 40px;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0px 0px 25px 10px rgb(123,74,34);
+}
+
+#yeux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+}
+
+
+.oeil {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+
+.oeildroit {
+    width: 100px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 100;
+}
+
+#texttodo {
+border-radius: 30px;
+width: 350px;
+height: 50px;
+border: 1px solid rgba(0, 0, 0, 0.452);
+font-size: 0.7em;
+font-family: 'Press Start 2P', cursive;
+background-color: rgb(35,30,31);
+color: white;
+}
+
+ul{
+    display: flex;
+    justify-content:center;
+    align-items:start;
+    margin: 10px 0px 10px 0;
+    flex-direction: column;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+li:hover:after {
+    color: brown;
+    content: " (Valider?)";
+    font-size: 0.4em;
+    margin-top: 15px;
+    position: fixed;
+}
+
+li:before {
+    color: black;
+    content: "☐";
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.checked:hover:after {
+    color: brown;
+    content: " (Clique pour supprimer)";
+    font-size: 0.4em;
+    margin-left: 10px;
+    margin-top: 15px;
+    position: fixed;
+}
+
+.checked:before {
+    color: rgb(3, 192, 3);
+    content: "☑";
+    margin-right: 5px;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 750px) {
+
+    form {
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+        width: auto;
+        height: auto;
+        background-color: rgba(48, 136, 0, 0.925);
+        min-height: 200px;
+        padding: 20px;
+        position: relative;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        box-shadow: 0px 0px 25px 10px rgb(123,74,34);
+    }
+
+    #yeux {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 220px;
+    }
+    
+    
+    .oeil {
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        border: solid 5px black;
+        border-radius: 20px;
+    }
+    
+    .oeildroit {
+        width: 80px;
+        height: 5px;
+        background-color: rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+
+    h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.8em;
+        color: white;
+        font-weight: 100;
+    }
+
+    #texttodo {
+        border-radius: 30px;
+        width: 230px;
+        height: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.452);
+        font-size: 0.5em;
+        font-family: 'Press Start 2P', cursive;
+        background-color: rgb(35,30,31);
+        color: white;
+        }
+
+}
+
+
+
