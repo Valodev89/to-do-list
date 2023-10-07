@@ -19,7 +19,6 @@ function animation(){
     oeildroit.style.borderColor = "black";
 };
 
-// oeildroit.style.height = "100px";
 
 
 function storage(){
